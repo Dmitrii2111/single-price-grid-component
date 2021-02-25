@@ -127,3 +127,30 @@ body{
    left: 40%;
    a { color: hsl(228, 45%, 44%); }
 }
+
+@media (max-width: 375px) {
+   .block {
+      width: 90%;
+      grid-template-areas: "headline"
+                           "subscription"
+                           "why_us";
+      .subscription .subscription__content{
+         width: 80%;
+         button{
+            margin-bottom: unset;
+         }
+      }
+      .why_us .why_us__content{
+         width: 80%;
+         ul{
+            padding-bottom: 15px;
+         }
+         ul li {
+            font-size: 14px;
+         }
+      }
+   }
+   footer{
+     display: none;
+   }
+}

@@ -130,4 +130,30 @@ body {
   color: #3e52a3;
 }
 
+@media (max-width: 375px) {
+  .block {
+    width: 90%;
+    grid-template-areas: "headline" "subscription" "why_us";
+  }
+  .block .subscription .subscription__content {
+    width: 80%;
+  }
+  .block .subscription .subscription__content button {
+    margin-bottom: unset;
+  }
+  .block .why_us .why_us__content {
+    width: 80%;
+  }
+  .block .why_us .why_us__content ul {
+    padding-bottom: 15px;
+  }
+  .block .why_us .why_us__content ul li {
+    font-size: 14px;
+  }
+
+  footer {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=/src.e31bb0bc.css.map */
